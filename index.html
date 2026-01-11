@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio – BUT Informatique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f5f6fa; color:#2c3e50; }
+        header.hero { background:linear-gradient(135deg,#1e272e,#353b48); color:#fff; padding:1rem 2rem; text-align:center; }
+        nav { background:#2f3640; padding:.5rem; position:sticky; top:0; }
+        nav ul { list-style:none; display:flex; justify-content:center; padding:0; margin:0; flex-wrap:wrap; }
+        nav li { margin:.5rem 1rem; }
+        nav a { color:#fff; text-decoration:none; font-weight:bold; }
+        section { max-width:1000px; margin:2rem auto; padding:2rem; background:#fff; border-radius:8px; }
+        h2 { border-left:5px solid #40739e; padding-left:.5rem; }
+        .profile-container {display: flex; align-items:center;gap: 2rem;flex-wrap: wrap;}
+        .profile-container img {width: 180px;height: 180px;border-radius: 50%;object-fit: cover;border: 4px solid #40739e;flex-shrink: 0;}
+        .profile-container p {flex: 1;min-width: 250px;}
+        details { border:1px solid #dcdde1; border-radius:6px; padding:1rem; margin-top:1rem; }
+        summary { font-weight:bold; cursor:pointer; }
+        .tags .tag { display:inline-block; background:#dcdde1; padding:.2rem .6rem; border-radius:4px; margin-right:.4rem; }
+        .project-media img, .project-media video { max-width:600px; width:100%; border-radius:6px; margin:.5rem 0; }
+        footer { background:#1e272e; color:#fff; text-align:center; padding:1.5rem; }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <h1>Maëlan Potier</h1>
+    <p>BUT Informatique – Parcours C</p>
+    <p>Systèmes • Réseaux • Administration</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#avenir">Après le BUT</a></li>
+        <li><a href="#cv">CV</a></li>
+    </ul>
+</nav>
+
+<section id="profil">
+    <h2>Profil</h2>
+    <div class="profile-container">
+        <img src="assets/profil.jpg" alt="Photo de profil">
+        <p>Bonjour, je m'appelle Maëlan, Actuellement étudiant en 1ère année au BUT informatique à IUT de Lannion .En parallèle, je développe des compétences en programmation que ce soit en C++, Python, java, html,... mais aussi en travail d'équipe et communications avec divers projets présents sur la page Projets. </p>
+    </div>
+</section>
+
+<section id="formations">
+    <h2>Formations</h2>
+    <p><strong>BUT Informatique – Parcours C</strong> - IUT de Lannion (2024/2026)</p>
+    <ul>
+        <li>Acquisition de compétences en programmation : C, Python, Java, HTML/CSS, JavaScript</li>
+        <li>Gestion et conception de bases de données : SQL, MongoDB</li>
+        <li>Systèmes et réseaux : administration, sécurité, protocoles</li>
+        <li>Participation à des projets pratiques : création de jeux, applications web et projets d’analyse de données</li>
+        <li>Travail en équipe, gestion de projet et méthodologies agiles</li>
+    </ul>
+    <p><strong>Baccalauréat Général</strong> – Spécialités Maths & NSI - Lycée Pierre-Mendès-France</p>
+    <ul>
+        <li>Approfondissement des mathématiques appliquées à l’informatique</li>
+        <li>Introduction à la programmation et aux algorithmes</li>
+        <li>Travail analytique et résolution de problèmes complexes</li>
+    </ul>
+    <p><strong>Brevet Général</strong> – Mention Très Bien - Collège Jacques Prévert</p>
+    <ul>
+        <li>Acquisition des bases scientifiques et logiques</li>
+        <li>Développement de la rigueur et de l’organisation dans le travail</li>
+    </ul>
+    <p><strong>PSC1 – Prévention et Secours Civiques de niveau 1</strong></p>
+    <ul>
+        <li>Acquisition des gestes de premiers secours et des bases de prévention</li>
+        <li>Savoir réagir en situation d’urgence pour aider une personne en danger</li>
+        <li>Formation reconnue au niveau national et ouverte à tous</li>
+        <li>Permet de contribuer à la sécurité et à la protection des personnes autour de soi</li>
+    </ul>
+</section>
+
+<section id="projets">
+    <h2>Projets</h2>
+    <details>
+        <summary>Parios Bros – Python / Pygame</summary>
+        <div class="project-media">
+            <img src="assets/Parios_Bros.png" alt="Parios Bros">
+        </div>
+        <p><strong>Contexte :</strong> Projet réalisé dans le cadre du concours NSI 2023. Objectif : créer un clone du jeu Mario en Python à l’aide du module Pygame.</p>
+        <p><strong>Description :</strong> Le projet consiste à recréer l’expérience de plusieurs jeux Mario en un seul jeu, avec des niveaux variés, des ennemis, des pouvoirs et un système de sauvegarde.</p>
+        <h4>Étapes principales :</h4>
+        <ul>
+            <li>Génération des niveaux à partir de fichiers texte</li>
+            <li>Création du personnage et gestion des collisions</li>
+            <li>Ajout des ennemis (Goombas, Koopas, plantes carnivores)</li>
+            <li>Implémentation de niveaux multiples, menu et sauvegardes</li>
+            <li>Ajout de pouvoirs (étoile, champignon) et nouveaux obstacles</li>
+        </ul>
+        <p><strong>Résultat :</strong> Projet récompensé par le prix “Coup de cœur” du jury régional NSI.</p>
+        <p><strong>Outils & technologies :</strong> Python, Pygame, GitHub</p>
+        <p><strong>Lien :</strong> <a href="https://github.com/ArthurArctique/Pario-Bros/" target="_blank">Dépôt GitHub du projet</a></p>
+        <div class="tags">
+            <span class="tag">réaliser</span>
+            <span class="tag">optimiser</span>
+            <span class="tag">collaborer</span>
+        </div>
+    </details>
+    <details>
+        <summary>Site Web des activités des Côtes d'Armor</summary>
+        <div class="project-media">
+            <img src="assets/Parios_Bros.png" alt="Parios Bros">
+        </div>
+        <p><strong>Contexte :</strong> Projet réalisé dans le cadre du parcours de BUT informatique en 2ème année. Objectif : créer un site web permettant à des Professionnels des Cotes d'Armor d'avoir plus de visibilité pour leurs activités</p>
+        <p><strong>Description :</strong> Le projet consiste à créer de zéro un site web en commançant par identifier les besoins de clients avec le projet mener avec une gestion de projet agile.</p>
+        <h4>Étapes principales :</h4>
+        <ul>
+            <li>Génération des tâches selon les besoins du clients</li>
+            <li>Création des pages Clients et Professionnels</li>
+            <li>Ajout d'une page de création de nouvelles activités par le professionnel et que des fonctions recherche et de tri des activités pour le client</li>
+            <li>Implémentation des moyens de paiements ainsi que des factures pour les professionnels</li>
+            <li>Ajout des notifications et d'une double securité pour les comptes clients et professionnels</li>
+        </ul>
+        <p><strong>Outils & technologies :</strong> HTML,CSS,SQL,JavaScript,GitHub,Jira</p>
+        <p><strong>Lien :</strong> <a href="https://github.com/5cover/413/" target="_blank">Dépôt GitHub du projet</a></p>
+        <div class="tags">
+            <span class="tag">réaliser</span>
+            <span class="tag">optimiser</span>
+            <span class="tag">conduire</span>
+            <span class="tag">collaborer</span>
+        </div>
+    </details>
+    <details>
+        <summary>Stage - Création d'un site Web permettant la gestion des commandes pour IUT de Lannion</summary>
+        <p><strong>Contexte :</strong> Projet réalisé dans le cadre du stage de BUT informatique en 2ème année. Objectif : créer un site web permettant au CRI de gérer les commandes de IUT avec plus visibilité sur leurs états</p>
+        <p><strong>Description :</strong> Le projet consiste à créer de zéro un site web pour permettre au CRI de voir l'état de chaque commande en temps réel ainsi que simplifier et uniformiser le processus des commandes. En utilisant la méthode de gestion MERISE.</p>
+        <h4>Étapes principales :</h4>
+        <ul>
+            <li>Génération de la base de données selon les besoins des clients</li>
+            <li>Création des pages des Gestions de commandes</li>
+            <li>Ajout des rôles ainsi que leurs droits sur les pages</li>
+            <li>Ajout de la gestion d'insertion sur chaques commandes pour les documents rattacher à une commande</li>
+            <li>Liasion de chaque partie de la création jusqu'à la livraison de la commande</li>
+        </ul>
+        <p><strong>Outils & technologies :</strong> HTML,CSS,SQL,JavaScript</p>
+        <div class="tags">
+            <span class="tag">réaliser</span>
+            <span class="tag">optimiser</span>
+            <span class="tag">administrer</span>
+            <span class="tag">gérer</span>
+            <span class="tag">conduire</span>
+        </div>
+    </details>
+    <details>
+        <summary>Projet d’analyse décisionnelle – Évaluation des risques de santé</summary>
+        <p><strong>Contexte :</strong> Projet réalisé en groupe dans le cadre du BUT Informatique. L’objectif était d’analyser les risques de santé d’une personne en fonction de diverses informations quotidiennes afin de déterminer les risques et proposer des recommandations pour les améliorer.</p>
+        <p><strong>Description :</strong> Le projet consiste à appliquer un modèle mathématique ou statistique classique (hors apprentissage automatique) pour appuyer une prise de décision éclairée dans un contexte réel. Les données ont été nettoyées, transformées et analysées afin de générer des indicateurs clairs sur la santé et le comportement quotidien.</p>
+        <h4>Étapes principales :</h4>
+        <ul>
+            <li><strong>Choix du sujet et du jeu de données :</strong> sélection du thème santé, construction et validation d’un jeu de données pertinent, formulation de la question décisionnelle.</li>
+            <li><strong>Nettoyage et préparation des données :</strong> vérification des valeurs manquantes, doublons et incohérences, transformation et normalisation des données.</li>
+            <li><strong>Mise en œuvre du modèle décisionnel :</strong> implémentation d’un modèle mathématique/statistique (régressions, probabilités, optimisation…) pour répondre à la question posée.</li>
+            <li><strong>Analyse et visualisation :</strong> création de graphiques, tableaux de bord et indicateurs clés pour faciliter la prise de décision.</li>
+            <li><strong>Interprétation et prise de décision :</strong> explication des résultats, discussion sur les avantages et limites, formulation de recommandations concrètes.</li>
+        </ul>
+        <p><strong>Outils & technologies :</strong> Python, Excel, Pandas, Matplotlib, GitHub</p>
+        <div class="tags">
+            <span class="tag">analyser</span>
+            <span class="tag">modéliser</span>
+            <span class="tag">visualiser</span>
+            <span class="tag">décider</span>
+            <span class="tag">collaborer</span>
+        </div>
+    </details>
+    <details>
+        <summary>Application – Exploitation des données de l’API DBLP</summary>
+        <p><strong>Contexte :</strong> Projet réalisé dans le cadre d’un projet informatique. Objectif : créer une application capable d’exploiter les données scientifiques fournies par l’API DBLP pour faciliter la recherche et l’analyse d’articles et d’auteurs.</p>
+        <p><strong>Description :</strong> L’application permet de récupérer, filtrer et organiser les données issues de DBLP pour obtenir des informations détaillées sur les articles scientifiques, leurs auteurs et leurs affiliations.</p>
+        <h4>Fonctionnalités principales :</h4>
+        <ul>
+            <li>Lister des articles scientifiques depuis l’API DBLP</li>
+            <li>Filtrer les articles en fonction de leur domaine</li>
+            <li>Filtrer les articles en fonction de leur titre</li>
+            <li>Lister les auteurs d’un article</li>
+            <li>Obtenir le contact des auteurs via LinkedIn</li>
+            <li>Obtenir l’affiliation des auteurs</li>
+        </ul>
+        <p><strong>Outils & technologies :</strong> Python, API REST, JSON, Requests, GitHub</p>
+        <p><strong>Lien :</strong> <a href="https://github.com/mf858/R4.10/" target="_blank">Dépôt GitHub du projet</a></p>
+        <div class="tags">
+            <span class="tag">réaliser</span>
+            <span class="tag">analyser</span>
+            <span class="tag">filtrer</span>
+            <span class="tag">explorer</span>
+            <span class="tag">organiser</span>
+        </div>
+    </details>
+
+</section>
+<section id="avenir">
+    <h2>Après le BUT</h2>
+    <p>Après mon BUT Informatique, je souhaite me spécialiser dans <strong>l’intelligence artificielle</strong> en intégrant un Master IA. Cette formation me permettra de développer des compétences avancées dans plusieurs domaines :</p>
+    
+    <ul>
+        <li>Apprentissage automatique et deep learning</li>
+        <li>Traitement du langage naturel et vision par ordinateur</li>
+        <li>Robotique et systèmes intelligents</li>
+    </ul>
+    
+    <p>L’objectif est de travailler sur des projets innovants et concrets dans des secteurs variés : <strong>santé, finance, jeux vidéo, systèmes intelligents</strong> ou <strong>recherche appliquée</strong>.</p>
+</section>
+<section id="cv">
+    <h2>CV</h2>
+    <object data="cv/CV_Potier.pdf" type="application/pdf" width="100%" height="500px"></object>
+    <object data="cv/CV_Competences.pdf" type="application/pdf" width="100%" height="500px"></object>
+</section>
+
+<footer>
+    <p>Portfolio BUT Informatique</p>
+</footer>
+
+</body>
+</html>
