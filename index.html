@@ -21,6 +21,8 @@
         .tags .tag { display:inline-block; background:#dcdde1; padding:.2rem .6rem; border-radius:4px; margin-right:.4rem; }
         .project-media img, .project-media video { max-width:600px; width:100%; border-radius:6px; margin:.5rem 0; }
         footer { background:#1e272e; color:#fff; text-align:center; padding:1.5rem; }
+        .cv-download-btn {float: right;margin-bottom: 1rem;padding: 0.6rem 1.2rem;background: #40739e;color: #fff;border: none;border-radius: 6px;font-weight: bold;cursor: pointer;transition: background 0.2s ease;}
+        .cv-download-btn:hover {background: #273c75;}
     </style>
 </head>
 <body>
@@ -206,8 +208,8 @@
 </section>
 <section id="cv">
     <h2>CV</h2>
-    <a href="./assets/CV_Competences.pdf" download class="cv-download">Télécharger mon CV</a>
     <object data="./assets/CV_Competences.pdf" type="application/pdf" width="100%" height="500px"></object>
+    <button class="cv-download-btn" onclick="downloadCV()">Télécharger mon CV</button>
 </section>
 
 <footer>
